@@ -1,16 +1,21 @@
-# tb_pemrograman
+# Catalog Sepatu App
 
-A new Flutter project.
+Aplikasi Katalog Sepatu adalah aplikasi yang dirancang untuk mengelola data sepatu, mulai dari menampilkan daftar sepatu hingga menambahkan sepatu baru melalui form input. Aplikasi ini memanfaatkan API untuk melakukan komunikasi dengan server.
 
-## Getting Started
+## Fitur Utama
 
-This project is a starting point for a Flutter application.
+1. Menampilkan Daftar Sepatu
+   - Mengambil dan menampilkan semua data sepatu dari server.
+   - Data sepatu ditampilkan dalam bentuk katalog dengan informasi lengkap seperti brand, nama, kategori, harga, diskon, warna, dan    gambar.
 
-A few resources to get you started if this is your first Flutter project:
+2. Form Input Sepatu
+   - Form untuk menambahkan sepatu baru ke dalam katalog.
+   - Form ini menerima data seperti brand, nama sepatu, kategori, harga, diskon, warna, dan gambar sepatu.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Pengelolaan Data
+   - Data sepatu dikelola dalam bentuk model (KatalogSepatuModel) yang memudahkan pengolahan data.
+   - Konversi data dari dan ke format JSON dilakukan melalui metode fromJson dan toJson.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Upload Gambar
+   - Aplikasi mendukung unggahan file gambar sepatu melalui form input.
+   - Gambar dikirim sebagai file multipart menggunakan dio.
